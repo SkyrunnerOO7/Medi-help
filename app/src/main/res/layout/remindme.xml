@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:layout_weight="2"
+        android:layout_marginLeft="25dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Morning"
+            android:text="Morning"
+            android:padding="16dp"
+            android:background="@color/Morning"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Afternoon"
+            android:text="Afternoon"
+            android:padding="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/Afernoon"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Evening"
+            android:text="Evening"
+            android:padding="16dp"
+            android:background="@color/Evening"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Night"
+            android:text="Night"
+            android:padding="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/Night"
+            android:layout_weight="1"
+            />
+    </GridLayout>
+
+</LinearLayout>
