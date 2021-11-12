@@ -10,17 +10,20 @@
 
     <TextView
             style="@style/CategoryStyle"
+            android:id="@+id/remindme"
             android:text="Remind Me"
             android:layout_weight="1"
             android:background="@color/Night"/>
     <TextView
         style="@style/CategoryStyle"
+        android:id="@+id/doctor"
         android:text="Contact Doctor"
         android:background="@color/Night"
         android:layout_weight="1"
         />
     <TextView
         style="@style/CategoryStyle"
+        android:id="@+id/pharma"
         android:background="@color/Night"
         android:text="Pharma"
         android:layout_weight="2"/>
