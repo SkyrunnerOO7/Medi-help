@@ -15,7 +15,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //code for moving to doctors appointment activity================================================================
+        TextView drAppointment = (TextView) findViewById(R.id.doctor);
 
+        // Set a click listener on that View
+        drAppointment.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers View is clicked on.
+            @Override
+            public void onClick(View view) {
+                Intent drAppointmentIntent = new Intent(MainActivity.this, DoctorsAppointment.class);
+                startActivity(drAppointmentIntent);
+            }
+        });
+
+        //code for moving to Pharma activity================================================================
         TextView pharma = (TextView) findViewById(R.id.pharma);
 
         // Set a click listener on that View
@@ -23,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent numbersIntent = new Intent(MainActivity.this, PharmaActivity.class);
-                startActivity(numbersIntent);
+                Intent pharmaIntent = new Intent(MainActivity.this, PharmaActivity.class);
+                startActivity(pharmaIntent);
             }
         });
 

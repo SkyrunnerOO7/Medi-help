@@ -103,6 +103,7 @@
             android:layout_marginLeft="15dp"
             android:onClick="submitOrder"
             android:text="SEND" />
+
     </LinearLayout>
 
 </ScrollView>

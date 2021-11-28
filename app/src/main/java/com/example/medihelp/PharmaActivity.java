@@ -14,10 +14,9 @@ import android.widget.Toast;
 
 public class PharmaActivity extends AppCompatActivity {
     int Dose = 0;
-    String name;
-    String remark;
 
-    //for the adding the photo of the prescription
+
+    //for adding the photo of the prescription=========================================================
     Button attachment;
     TextView tvAttachment;
     Uri URI = null;
