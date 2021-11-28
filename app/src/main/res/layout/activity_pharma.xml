@@ -21,6 +21,21 @@
             android:inputType="textMultiLine"
             />
 
+        <Button
+            android:id="@+id/btAttachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_alignParentEnd="true"
+            android:text="Add photo of Prescription" />
+
+        <TextView
+            android:id="@+id/tvAttachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:visibility="gone" />
+
 
         <TextView
             android:layout_marginLeft="15dp"

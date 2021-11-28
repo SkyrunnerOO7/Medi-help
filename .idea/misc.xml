@@ -5,10 +5,12 @@
       <map>
         <entry key="..\:/MediHelp/app/src/main/res/layout/activity_main.xml" value="0.25052083333333336" />
         <entry key="..\:/MediHelp/app/src/main/res/layout/remindme.xml" value="0.12760416666666666" />
+        <entry key="..\:/apps/ud839_Miwok_26/08/MediHelp/app/src/main/res/layout/activity_doctors_appointment.xml" value="0.17980072463768115" />
+        <entry key="..\:/apps/ud839_Miwok_26/08/MediHelp/app/src/main/res/layout/activity_pharma.xml" value="0.1" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
