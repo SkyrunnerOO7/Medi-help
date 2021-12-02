@@ -16,9 +16,11 @@
         android:theme="@style/Theme.MediHelp">
         <activity
             android:name=".DoctorsAppointment"
+            android:label="Doctors Appointment"
             android:exported="true" />
         <activity
             android:name=".PharmaActivity"
+            android:label="Pharma"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

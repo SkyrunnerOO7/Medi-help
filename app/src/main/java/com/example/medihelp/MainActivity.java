@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //code for moving to doctors appointment activity================================================================
-        TextView drAppointment = (TextView) findViewById(R.id.doctor);
+        ImageView drAppointment = (ImageView) findViewById(R.id.textView);
 
         // Set a click listener on that View
         drAppointment.setOnClickListener(new View.OnClickListener() {
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //code for moving to Pharma activity================================================================
-        TextView pharma = (TextView) findViewById(R.id.pharma);
+        ImageView pharma = (ImageView) findViewById(R.id.textView3);
 
         // Set a click listener on that View
         pharma.setOnClickListener(new View.OnClickListener() {
