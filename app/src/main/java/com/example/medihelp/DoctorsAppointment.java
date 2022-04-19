@@ -72,7 +72,7 @@ public class DoctorsAppointment extends AppCompatActivity {
         String age = ageField.getText().toString();
 
         /** Taking gender from the user and show edit text*/
-        String gender = "0";
+        String gender = "male";
 
         /** Taking Symptoms from the user and show edit text*/
         EditText symptomsField = (EditText) findViewById(R.id.current_decease);
@@ -95,12 +95,22 @@ public class DoctorsAppointment extends AppCompatActivity {
 
         String priceMessage = createOrderSummary(name, age, gender, symptoms, existingHealthIssue, contact, remark);
 
-        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        /*Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
         intent.putExtra(Intent.EXTRA_SUBJECT, "Medicine Summary ");
         intent.putExtra(Intent.EXTRA_TEXT,priceMessage);
+        */
 
-        //new image
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, priceMessage
+        );
+        sendIntent.setType("text/plain");
+
+        Intent shareIntent = Intent.createChooser(sendIntent, null);
+        startActivity(shareIntent);
+
+        /*//new image
         //for the adding the photo of the prescription
         if (URI != null) {
             intent.putExtra(Intent.EXTRA_STREAM, URI);
@@ -108,7 +118,7 @@ public class DoctorsAppointment extends AppCompatActivity {
 
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
-        }
+        }*/
 
     }
 

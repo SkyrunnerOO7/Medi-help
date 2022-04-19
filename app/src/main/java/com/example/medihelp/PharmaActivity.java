@@ -59,7 +59,14 @@ public class PharmaActivity extends AppCompatActivity {
 
         String priceMessage = createOrderSummary(name, remark);
 
-        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, priceMessage);
+        sendIntent.setType("text/plain");
+
+        Intent shareIntent = Intent.createChooser(sendIntent, null);
+        startActivity(shareIntent);
+        /*Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
         intent.putExtra(Intent.EXTRA_SUBJECT, "Medicine Summary ");
         intent.putExtra(Intent.EXTRA_TEXT,priceMessage);
@@ -72,7 +79,7 @@ public class PharmaActivity extends AppCompatActivity {
 
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
-        }
+        }*/
 
     }
 
